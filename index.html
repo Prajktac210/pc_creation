@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PC CREATION – Building Smart Digital Solutions</title>
+  <meta name="description" content="PC CREATION  – Empowering Businesses with Technology & AI" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Bricolage+Grotesque:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+  <div id="progress-bar"></div>
+  <div class="toast" id="toast"><span class="toast-icon">🎉</span><span class="toast-msg"></span></div>
+
+  <!-- PAGE LOADER -->
+  <div id="pageloader">
+    <div class="pl-logo">
+      <div class="pl-hex">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="50,6 94,27 94,73 50,94 6,73 6,27" stroke="#38BDF8" stroke-width="2" fill="none"
+            class="pl-hex-path" />
+          <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" fill="#38BDF8"
+            font-family="Bricolage Grotesque" font-weight="800" font-size="26">PC</text>
+        </svg>
+      </div>
+      <div class="pl-text-logo">PC <span>CREATION </span></div>
+      <div class="pl-bar-wrap">
+        <div class="pl-bar"></div>
+      </div>
+      <p class="pl-tagline">Building Smart Digital Solutions</p>
+      <div class="pl-dots">
+        <div class="pl-dot"></div>
+        <div class="pl-dot"></div>
+        <div class="pl-dot"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- NAVBAR -->
+  <nav id="nav">
+    <div class="nav-c">
+      <a href="#hero" class="nav-brand">
+        <div class="nav-hex">PC</div>
+        CREATION <span class="brand-dot">.</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-a">About</a></li>
+        <li><a href="#services" class="nav-a">Services</a></li>
+        <li><a href="#portfolio" class="nav-a">Portfolio</a></li>
+        <li><a href="#contact" class="nav-a">Contact</a></li>
+        <li><a href="#contact" class="nav-cta">Get a Quote →</a></li>
+      </ul>
+      <button class="ham" id="ham" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <canvas id="hero-canvas"></canvas>
+      <div class="hero-blob blob1"></div>
+      <div class="hero-blob blob2"></div>
+      <div class="hero-blob blob3"></div>
+    </div>
+    <div class="shapes">
+      <div class="s3d s3d-1"></div>
+      <div class="s3d s3d-2"></div>
+      <div class="s3d s3d-3"></div>
+      <div class="s3d s3d-4"></div>
+      <div class="s3d s3d-5"></div>
+      <div class="s3d s3d-6"></div>
+    </div>
+    <div class="hero-c">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <div class="badge-pulse"></div> AI-Powered Digital Agency
+        </div>
+        <h1 class="hero-h1">Building Smart<br /><span class="grad">Digital</span><br />Solutions</h1>
+        <p class="hero-sub">Empowering Businesses with Technology &amp; AI — from web apps to intelligent automation, we
+          build the future you deserve.</p>
+        <div class="hero-btns">
+          <button class="btn btn-primary" onclick="btnLoader(this,'#services')">
+            <span class="btn-loader"></span>
+            <span class="btn-text">Get Started</span>
+            <span class="btn-icon">🚀</span>
+          </button>
+          <button class="btn btn-outline" onclick="btnLoader(this,'#contact')">
+            <span class="btn-loader"></span>
+            <span class="btn-text">Contact Us</span>
+            <span class="btn-icon">→</span>
+          </button>
+        </div>
+        <div class="hero-stats">
+          <div class="h-stat">
+            <div class="h-stat-n"><span class="num-counter" data-target="5">0</span><span class="h-stat-plus">+</span>
+            </div>
+            <p class="h-stat-l">Projects Delivered</p>
+          </div>
+          <div class="h-stat-div"></div>
+          <div class="h-stat">
+            <div class="h-stat-n"><span class="num-counter" data-target="5">0</span><span class="h-stat-plus">+</span>
+            </div>
+            <p class="h-stat-l">Happy Clients</p>
+          </div>
+          <div class="h-stat-div"></div>
+          <div class="h-stat">
+            <div class="h-stat-n"><span class="num-counter" data-target="1">0</span><span class="h-stat-plus">+</span>
+            </div>
+            <p class="h-stat-l">Years Experience</p>
+          </div>
+          <div class="h-stat-div"></div>
+          <div class="h-stat">
+            <div class="h-stat-n"><span class="num-counter" data-target="98">0</span><span class="h-stat-plus">%</span>
+            </div>
+            <p class="h-stat-l">Client Satisfaction</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-3d-card hc2 tilt">
+        <div class="hc-icon">🌐</div>
+        <div class="hc-title">Web Development</div>
+        <div class="hc-sub">Premium digital experiences</div>
+        <div class="hc-badge">React • Tailwind css •js </div>
+      </div>
+
+    </div>
+    </div>
+    <a href="#about" class="scroll-down">
+      <span>Scroll Down</span>
+      <div class="scroll-mouse"></div>
+    </a>
+  </section>
+
+  <!-- COUNTERS BAR -->
+  <div id="counters">
+    <div class="container">
+      <div class="counters-inner">
+        <div class="counter-item">
+          <div class="counter-n"><span class="num-counter" data-target="5">0</span><span class="counter-plus">+</span>
+          </div>
+          <p class="counter-l">Projects Delivered</p>
+        </div>
+        <div class="counter-item">
+          <div class="counter-n"><span class="num-counter" data-target="5">0</span><span class="counter-plus">+</span>
+          </div>
+          <p class="counter-l">Happy Clients</p>
+        </div>
+        <div class="counter-item">
+          <div class="counter-n"><span class="num-counter" data-target="2">0</span><span class="counter-plus">+</span>
+          </div>
+          <p class="counter-l">Team Members</p>
+        </div>
+        <div class="counter-item">
+          <div class="counter-n"><span class="num-counter" data-target="1">0</span><span class="counter-plus">+</span>
+          </div>
+          <p class="counter-l">Years Experience</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-img-wrap reveal left">
+          <div class="about-main-card tilt">
+            <div class="amc-icon">💻</div>
+
+            <div class="amc-title">
+              Creative Web Solutions
+            </div>
+
+            <div class="amc-sub">
+              We create modern, responsive, and user-friendly websites that help businesses
+              build a strong online presence. Every project is designed with performance,
+              simplicity, and client satisfaction in mind.
+            </div>
+
+            <div style="margin-top:24px;display:flex;gap:10px;flex-wrap:wrap">
+
+              <span
+                style="background:rgba(56,189,248,.15);border:1px solid rgba(56,189,248,.3);color:var(--sky2);padding:5px 14px;border-radius:99px;font-size:.75rem;font-family:var(--font-h);font-weight:700">
+                Responsive Design
+              </span>
+
+              <span
+                style="background:rgba(56,189,248,.15);border:1px solid rgba(56,189,248,.3);color:var(--sky2);padding:5px 14px;border-radius:99px;font-size:.75rem;font-family:var(--font-h);font-weight:700">
+                Clean Code
+              </span>
+
+              <span
+                style="background:rgba(56,189,248,.15);border:1px solid rgba(56,189,248,.3);color:var(--sky2);padding:5px 14px;border-radius:99px;font-size:.75rem;font-family:var(--font-h);font-weight:700">
+                Fast Delivery
+              </span>
+
+            </div>
+          </div>
+
+          <div class="about-float-cards">
+            <div class="afc">
+              <div class="afc-dot"></div>
+              Website Development
+            </div>
+
+            <div class="afc">
+              <div class="afc-dot" style="background:#4ADE80"></div>
+              Responsive Design
+            </div>
+
+            <div class="afc">
+              <div class="afc-dot" style="background:#F97316"></div>
+              Website Maintenance
+            </div>
+          </div>
+
+        </div>
+
+        <div class="about-content reveal right">
+
+          <div class="s-label">
+            About Us
+          </div>
+
+          <h2 class="s-title">
+            Building <span class="grad">Modern Websites</span> That Grow Your Business
+          </h2>
+
+          <p class="about-p">
+            We specialize in designing and developing modern websites for startups,
+            small businesses, and professionals. Our goal is to deliver websites that
+            are attractive, responsive, and easy to manage.
+          </p>
+
+          <p class="about-p">
+            From business websites to portfolio websites and custom web applications,
+            we focus on quality, performance, and long-term client relationships.
+          </p>
+
+          <div class="mvv-row">
+
+            <div class="mvv">
+              <div class="mvv-em">🎯</div>
+              <div>
+                <h4>Our Mission</h4>
+                <p>
+                  To help businesses establish a strong online presence through
+                  high-quality web solutions.
+                </p>
+              </div>
+            </div>
+
+            <div class="mvv">
+              <div class="mvv-em">🚀</div>
+              <div>
+                <h4>Our Vision</h4>
+                <p>
+                  To become a trusted web development partner by delivering reliable,
+                  creative, and affordable digital solutions.
+                </p>
+              </div>
+            </div>
+
+            <div class="mvv">
+              <div class="mvv-em">🤝</div>
+              <div>
+                <h4>Our Values</h4>
+                <p>
+                  Quality, transparency, timely delivery, and client satisfaction are
+                  the foundation of every project we build.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section section-alt">
+    <div class="container">
+
+      <div class="s-label centered reveal">Our Services</div>
+
+      <h2 class="s-title centered reveal">
+        Professional <span class="grad">Web Solutions</span>
+      </h2>
+
+      <p class="s-sub centered reveal">
+        We create modern, responsive, and high-performance websites tailored to your business needs.
+      </p>
+
+      <div class="svc-grid">
+
+        <!-- Service 1 -->
+        <div class="svc-card tilt reveal up" data-d="1">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8M12 17v4" />
+              <path d="m6 8 2 2-2 2M11 12h4" />
+            </svg>
+          </div>
+
+          <h3>Website Development</h3>
+
+          <p>
+            We build fast, responsive, and visually appealing websites that help
+            businesses establish a strong online presence.
+          </p>
+
+          <ul class="svc-li">
+            <li>Business Websites</li>
+            <li>Portfolio Websites</li>
+            <li>Landing Pages</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="svc-card tilt reveal up" data-d="2">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+          </div>
+
+          <h3>Custom Web Applications</h3>
+
+          <p>
+            We develop secure and scalable web applications designed to simplify
+            business operations and improve productivity.
+          </p>
+
+          <ul class="svc-li">
+            <li>Admin Panels</li>
+            <li>Management Systems</li>
+            <li>Student Projects</li>
+            <li>Custom Dashboards</li>
+          </ul>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="svc-card tilt reveal up" data-d="3">
+          <div class="svc-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6">
+              <path d="M18 20V10M12 20V4M6 20v-6" />
+              <path d="M21 20H3" />
+            </svg>
+          </div>
+
+          <h3>Website Maintenance</h3>
+
+          <p>
+            Keep your website secure, updated, and running smoothly with regular
+            maintenance and technical support.
+          </p>
+
+          <ul class="svc-li">
+            <li>Bug Fixing</li>
+            <li>Website Updates</li>
+            <li>Performance Optimization</li>
+            <li>Technical Support</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- WHY CHOOSE US -->
+  <section id="why" class="section section-alt">
+    <div class="container">
+
+      <div class="s-label centered reveal">Why Choose Us</div>
+
+      <h2 class="s-title centered reveal">
+        Why Clients <span class="grad">Choose Us</span>
+      </h2>
+
+      <p class="s-sub centered reveal">
+        We focus on quality, creativity, and delivering websites that help your business grow.
+      </p>
+
+      <div class="why-grid">
+
+        <!-- Card 1 -->
+        <div class="why-card reveal zoom" data-d="1">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+          </div>
+
+          <h3>Clean & Modern Design</h3>
+
+          <p>
+            We design attractive, responsive, and user-friendly websites that create a strong first impression.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="why-card reveal zoom" data-d="2">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+          </div>
+
+          <h3>Responsive Websites</h3>
+
+          <p>
+            Every website works perfectly on desktop, tablet, and mobile devices.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="why-card reveal zoom" data-d="3">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M18 20V10M12 20V4M6 20v-6" />
+              <path d="M21 20H3" />
+            </svg>
+          </div>
+
+          <h3>Affordable Pricing</h3>
+
+          <p>
+            We provide professional websites at reasonable prices without compromising quality.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="why-card reveal zoom" data-d="4">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+              <line x1="6" y1="1" x2="6" y2="4" />
+              <line x1="10" y1="1" x2="10" y2="4" />
+              <line x1="14" y1="1" x2="14" y2="4" />
+            </svg>
+          </div>
+
+          <h3>Fast Delivery</h3>
+
+          <p>
+            We complete projects on time while maintaining high quality standards.
+          </p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="why-card reveal zoom" data-d="5">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+
+          <h3>Secure & Reliable</h3>
+
+          <p>
+            We follow modern development practices to build secure and reliable websites.
+          </p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="why-card reveal zoom" data-d="6">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+
+          <h3>Support After Delivery</h3>
+
+          <p>
+            We provide website updates, bug fixes, and technical support even after project completion.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- FEATURED PROJECTS -->
+<section id="portfolio" class="section">
+  <div class="container">
+
+    <h2 class="s-title centered reveal">
+      Our <span class="grad">Recent Projects</span>
+    </h2>
+
+    <p class="s-sub centered reveal">
+      A collection of websites we've designed and developed with a focus on performance,
+      responsive design, and user experience.
+    </p>
+
+    <div class="testi-grid">
+
+      <!-- Project 1 -->
+      <div class="testi-card reveal zoom">
+        <div class="testi-stars">⭐⭐⭐</div>
+
+        <p class="testi-text">
+          Designed and developed a modern Village Portal with responsive layouts,
+          public information pages, and an intuitive user experience.
+        </p>
+
+        <div class="testi-author">
+          <div>
+            <div class="testi-name">Shekhmirwadi Village</div>
+            <div class="testi-role">Village Information Website</div>
+            <small>Client Review: "Professional work and timely delivery."</small>
+          </div>
+        </div>
+
+        <a href="https://shekhmirwadi.netlify.app/" target="_blank" class="project-btn">
+          🌐 Live Website
+        </a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="testi-card reveal zoom">
+        <div class="testi-stars">⭐⭐⭐⭐</div>
+
+        <p class="testi-text">
+          Responsive photography portfolio with gallery sections,
+          contact form, and mobile-friendly design.
+        </p>
+
+        <div class="testi-author">
+          <div>
+            <div class="testi-name">Mayur Chavan</div>
+            <div class="testi-role">Photography Portfolio</div>
+            <small>Client Review: "Exactly what I wanted. Clean and premium design."</small>
+          </div>
+        </div>
+
+        <a href="https://mayoorpankhfilms.netlify.app/" target="_blank" class="project-btn">
+          🌐 Live Website
+        </a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="testi-card reveal zoom">
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+
+        <p class="testi-text">
+          Developed a business website for showcasing Aari embroidery services,
+          products, and customer enquiry features.
+        </p>
+
+        <div class="testi-author">
+          <div>
+            <div class="testi-name">Jayshree Chive</div>
+            <div class="testi-role">Business Website</div>
+            <small>Client Review: "Very satisfied with the website quality."</small>
+          </div>
+        </div>
+
+        <a href="https://jayashri-aari-studio.vercel.app/" target="_blank" class="project-btn">
+          🌐 Live Website
+        </a>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="testi-card reveal zoom">
+        <div class="testi-stars">⭐⭐⭐</div>
+
+        <p class="testi-text">
+          Elegant Wedding Planner website featuring service listings,
+          booking information, and a premium user interface.
+        </p>
+
+        <div class="testi-author">
+          <div>
+            <div class="testi-name">Wedding Planner</div>
+            <div class="testi-role">Business Website</div>
+            <small>Client Review: "Highly recommended. Great communication."</small>
+          </div>
+        </div>
+
+        <a href="https://weddingplanner-blond.vercel.app/" target="_blank" class="project-btn">
+          🌐 Live Website
+        </a>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="testi-card reveal zoom">
+        <div class="testi-stars">⭐⭐⭐⭐</div>
+
+        <p class="testi-text">
+          Designed and developed a modern Progressive Farmer website to provide crop information,
+          modern farming techniques, government schemes, and useful resources with a responsive design.
+        </p>
+
+        <div class="testi-author">
+          <div>
+            <div class="testi-name">Sampat Shirke</div>
+            <div class="testi-role">Agriculture Information Website</div>
+            <small>Client Review: "Excellent website with a clean design, easy navigation, and mobile-friendly experience."</small>
+          </div>
+        </div>
+
+        <a href="https://transcendent-starburst-e29592.netlify.app/" target="_blank" class="project-btn">
+          🌱 Live Website
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+
+      <div class="s-label centered reveal">Get In Touch</div>
+
+      <h2 class="s-title centered reveal">
+        Let's Build Your <span class="grad">Dream Website</span>
+      </h2>
+
+      <p class="s-sub centered reveal">
+        Have a project in mind? Contact us today for a free consultation and let's create something amazing together.
+      </p>
+
+      <div class="contact-grid">
+
+        <!-- Contact Form -->
+        <div class="contact-form-card reveal left">
+
+          <h3>Request a Free Quote 💬</h3>
+
+          <form id="cform" onsubmit="sendToWhatsapp(event)">
+
+            <div class="form-row">
+
+              <div class="fg">
+                <label for="f-name">Full Name</label>
+                <input type="text" id="f-name" placeholder="Enter your full name" required>
+              </div>
+
+              <div class="fg">
+                <label for="f-email">Email Address</label>
+                <input type="email" id="f-email" placeholder="Enter your email" required>
+              </div>
+
+            </div>
+
+            <div class="fg">
+              <label for="f-phone">Phone / WhatsApp</label>
+              <input type="tel" id="f-phone" placeholder="+91 XXXXX XXXXX" required>
+            </div>
+
+            <div class="fg">
+              <label for="f-service">Select Service</label>
+
+              <select id="f-service" required>
+
+                <option>Responsive Web Design</option>
+
+                <option>Frontend Development</option>
+
+                <option>React.js Website Development</option>
+
+                <option>HTML, CSS & JavaScript Development</option>
+
+                <option>Business Website</option>
+
+                <option>Portfolio Website</option>
+
+                <option>Landing Page</option>
+
+                <option>UI/UX Design</option>
+
+
+                <option>Website Maintenance</option>
+
+                <option>Performance Optimization</option>
+
+
+                <option>Other</option>
+
+              </select>
+            </div>
+
+            <div class="fg">
+              <label for="f-msg">Project Details</label>
+
+              <textarea id="f-msg" rows="5" placeholder="Tell us about your project requirements..."
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+
+              <span class="btn-loader"></span>
+
+              <span class="btn-text">
+                Send via WhatsApp
+              </span>
+
+              <span class="btn-icon">💬</span>
+
+            </button>
+
+            <div class="form-success-msg" id="form-success">
+
+              ✅ Redirecting to WhatsApp...
+
+            </div>
+
+          </form>
+
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info-wrap reveal right">
+
+          <div class="ci-card">
+
+            <h3>Contact Information</h3>
+
+            <div class="ci-item">
+
+              <div class="ci-icon">📧</div>
+
+              <div>
+
+                <div class="ci-lbl">Email</div>
+
+                <div class="ci-val">
+                  <a href="mailto:prajktac210@gmail.com">
+                    prajktac210@gmail.com
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="ci-item">
+
+              <div class="ci-icon">📱</div>
+
+              <div>
+
+                <div class="ci-lbl">
+                  Phone / WhatsApp
+                </div>
+
+                <div class="ci-val">
+                  <a href="tel:+919175604825">
+                    +91 9175604825
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="ci-item">
+
+              <div class="ci-icon">📍</div>
+
+              <div>
+
+                <div class="ci-lbl">Location</div>
+
+                <div class="ci-val">
+                Satara, Maharashtra, India
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="ci-item">
+
+              <div class="ci-icon">🕒</div>
+
+              <div>
+
+                <div class="ci-lbl">
+                  Working Hours
+                </div>
+
+                <div class="ci-val">
+                  Monday – Saturday | 9:00 AM – 8:00 PM
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Map Card -->
+
+          <div class="map-card">
+
+            <div>
+
+              <div class="map-pin">📍</div>
+
+              <p>Satara, Maharashtra</p>
+
+              <small>India</small>
+
+            </div>
+
+          </div>
+
+          <!-- WhatsApp Card -->
+
+          <div class="ci-card"
+            style="background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;border:none;">
+
+            <h3 style="color:#fff">
+              Need a Website?
+            </h3>
+
+            <p style="font-size:.9rem;color:rgba(255,255,255,.7);margin-bottom:18px;">
+
+              Chat with us on WhatsApp for a free consultation.
+
+            </p>
+
+            <a href="https://wa.me/919175604825" target="_blank" rel="noopener" class="btn btn-white btn-full">
+
+              <span class="btn-text">
+                Chat on WhatsApp
+              </span>
+
+              <span class="btn-icon">
+                💬
+              </span>
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+
+      <div class="footer-content">
+
+        <div class="footer-brand">
+          <h2>PC | CREATION</h2>
+
+          <p>
+            We create modern, responsive, and professional websites for businesses,
+            startups, and individuals.
+          </p>
+        </div>
+
+
+
+
+        <div class="footer-bottom">
+
+          <p>
+            © 2026 <strong>PC | CREATION</strong>. All Rights Reserved.
+          </p>
+
+        </div>
+
+      </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
